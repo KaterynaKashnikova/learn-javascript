@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <script>
+    'use strict';
+
+    function filterRange(arr, a, b) {
+	  return arr.filter(item => (a <= item && item <= b));
+	}
+
+	let arr = [5, 3, 8, 1, 2, 9, 7, 0];
+	let filtered = filterRange(arr, 1, 4);
+	alert( filtered );
+  </script>
+
+
+</body>
+
+</html>
