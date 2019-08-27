@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <script>
+    'use strict';
+
+	function getWeekDay(date) {
+	  let d = ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'];
+
+	  return d[date.getDay()];
+	}
+
+	function getLocalDay(date) {
+	  if (date.getDay() == 0) return 7;
+	  
+	  return date.getDay();
+	}
+
+	let date = new Date(2000, 3, 14);
+	alert(getWeekDay(date));
+	alert(getLocalDay(date));
+  </script>
+
+
+</body>
+
+</html>
